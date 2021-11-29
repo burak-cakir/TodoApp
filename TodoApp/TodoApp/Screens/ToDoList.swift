@@ -13,7 +13,17 @@ struct ToDoList: View {
     
     var body: some View {
         List(todoStore.toDoList, id:\.title){item in
-            Text(item.title)
+            HStack{
+                Text(item.title)
+                Button("DELETE"){
+                    if let index = todoStore.toDoList.firstIndex(where: {$0.title == item.title})
+                    {
+                        todoStore.toDoList.remove(at: index)
+                    }
+                        
+                }
+            }
+          
             
         }
     }
