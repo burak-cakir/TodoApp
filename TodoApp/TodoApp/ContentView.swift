@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject  var todoStore : ToDoStore
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ToDoMain()
+            .environmentObject(todoStore)
     }
 }
 
