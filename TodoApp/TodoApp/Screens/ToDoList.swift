@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct ToDoList: View {
+    
+    @EnvironmentObject  var todoStore : ToDoStore
+    
     var body: some View {
-        Text("add todo list")
+        List(todoStore.toDoList, id:\.title){item in
+            Text(item.title)
+            
+        }
     }
 }
 

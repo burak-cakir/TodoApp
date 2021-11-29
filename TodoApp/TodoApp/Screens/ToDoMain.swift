@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ToDoMain: View {
+    @EnvironmentObject  var todoStore : ToDoStore
     var body: some View {
         VStack{
             AddToDo()

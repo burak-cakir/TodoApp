@@ -13,12 +13,13 @@ struct ContentView: View {
     
     var body: some View {
         ToDoMain()
-            .environmentObject(todoStore)
+        .environmentObject(todoStore)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        .environmentObject(ToDoStore())
     }
 }

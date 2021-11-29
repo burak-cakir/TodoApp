@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddToDo: View {
     
-
+    @EnvironmentObject  var todoStore : ToDoStore
     @State var todoModel = ToDoModel()
     
     var body: some View {
@@ -21,6 +21,13 @@ struct AddToDo: View {
                 .padding()
             
             Button("Add ToDo List"){
+                
+            var newToDo = ToDoModel()
+            newToDo.title = todoModel.title
+            newToDo.description = todoModel.description
+            
+                todoStore.toDoList.append(newToDo)
+                
                 
             }
             .padding()
