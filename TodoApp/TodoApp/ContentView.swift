@@ -9,11 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @EnvironmentObject  var todoStore : ToDoStore
+//    @EnvironmentObject  var todoStore : ToDoStore
+    
+    @StateObject var toDoStore : ToDoStore = ToDoStore()
     
     var body: some View {
         ToDoMain()
-        .environmentObject(todoStore)
+            .environmentObject(self.toDoStore)
     }
 }
 
