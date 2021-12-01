@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ToDoList: View {
     
-    @EnvironmentObject  var todoStore : ToDoStore
+  @EnvironmentObject  var todoStore : ToDoStore
+    @StateObject var toDoStore : ToDoStore = ToDoStore()
     
     var body: some View {
         List(todoStore.toDoList, id:\.title){item in
@@ -32,5 +33,6 @@ struct ToDoList: View {
 struct ToDoList_Previews: PreviewProvider {
     static var previews: some View {
         ToDoList()
+            .environmentObject(ToDoStore())
     }
 }

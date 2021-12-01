@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		198174962757CF390025F5EB /* RandomListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198174952757CF390025F5EB /* RandomListModel.swift */; };
+		198174982757D7050025F5EB /* RandomListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198174972757D7050025F5EB /* RandomListStore.swift */; };
+		1981749A2757D8140025F5EB /* RandomListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198174992757D8140025F5EB /* RandomListScreen.swift */; };
+		1981749D2757DE1E0025F5EB /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981749C2757DE1E0025F5EB /* File.swift */; };
+		1981749F2757E0920025F5EB /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981749E2757E0920025F5EB /* GameStore.swift */; };
+		198174A12757E21D0025F5EB /* GameStoreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198174A02757E21D0025F5EB /* GameStoreScreen.swift */; };
 		19D7999B2755768D00A5F72D /* TodoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D7999A2755768D00A5F72D /* TodoAppApp.swift */; };
 		19D7999D2755768D00A5F72D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D7999C2755768D00A5F72D /* ContentView.swift */; };
 		19D7999F2755768E00A5F72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D7999E2755768E00A5F72D /* Assets.xcassets */; };
@@ -19,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		198174952757CF390025F5EB /* RandomListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomListModel.swift; sourceTree = "<group>"; };
+		198174972757D7050025F5EB /* RandomListStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomListStore.swift; sourceTree = "<group>"; };
+		198174992757D8140025F5EB /* RandomListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomListScreen.swift; sourceTree = "<group>"; };
+		1981749C2757DE1E0025F5EB /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		1981749E2757E0920025F5EB /* GameStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStore.swift; sourceTree = "<group>"; };
+		198174A02757E21D0025F5EB /* GameStoreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStoreScreen.swift; sourceTree = "<group>"; };
 		19D799972755768D00A5F72D /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D7999A2755768D00A5F72D /* TodoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppApp.swift; sourceTree = "<group>"; };
 		19D7999C2755768D00A5F72D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +54,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1981749B2757DE0D0025F5EB /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				1981749C2757DE1E0025F5EB /* File.swift */,
+				1981749E2757E0920025F5EB /* GameStore.swift */,
+				198174A02757E21D0025F5EB /* GameStoreScreen.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		19D7998E2755768D00A5F72D = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +83,7 @@
 		19D799992755768D00A5F72D /* TodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				1981749B2757DE0D0025F5EB /* Game */,
 				19D799AA275576F300A5F72D /* Models */,
 				19D799A9275576E800A5F72D /* Screens */,
 				19D799A8275576E100A5F72D /* Store */,
@@ -94,6 +117,7 @@
 				19D799AF275577EA00A5F72D /* ToDoMain.swift */,
 				19D799B12755782400A5F72D /* ToDoList.swift */,
 				19D799B32755787600A5F72D /* AddToDo.swift */,
+				198174992757D8140025F5EB /* RandomListScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -102,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				19D799AD2755779900A5F72D /* ToDoModel.swift */,
+				198174952757CF390025F5EB /* RandomListModel.swift */,
+				198174972757D7050025F5EB /* RandomListStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,12 +202,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				198174A12757E21D0025F5EB /* GameStoreScreen.swift in Sources */,
 				19D7999D2755768D00A5F72D /* ContentView.swift in Sources */,
+				1981749F2757E0920025F5EB /* GameStore.swift in Sources */,
 				19D799B22755782400A5F72D /* ToDoList.swift in Sources */,
+				1981749A2757D8140025F5EB /* RandomListScreen.swift in Sources */,
 				19D799AE2755779900A5F72D /* ToDoModel.swift in Sources */,
 				19D799B42755787600A5F72D /* AddToDo.swift in Sources */,
 				19D799B0275577EA00A5F72D /* ToDoMain.swift in Sources */,
+				198174982757D7050025F5EB /* RandomListStore.swift in Sources */,
 				19D799AC2755770C00A5F72D /* ToDoStore.swift in Sources */,
+				198174962757CF390025F5EB /* RandomListModel.swift in Sources */,
+				1981749D2757DE1E0025F5EB /* File.swift in Sources */,
 				19D7999B2755768D00A5F72D /* TodoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
